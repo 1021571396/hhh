@@ -42,7 +42,7 @@
                 UIImage *backgroundImage = [UIImage imageNamed:@"tabbar_compose_button@2x.png"];
                 [btn setImage:image forState:UIControlStateNormal];
                 [btn setBackgroundImage:backgroundImage forState:UIControlStateNormal];
-                buttontag=btn.tag;
+                buttontag=btn.tag*1.0;
             }else//另外四个
             {
                 //调整标题位置
