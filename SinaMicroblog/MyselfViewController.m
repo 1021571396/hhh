@@ -37,7 +37,7 @@
 {
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets=NO;
-   
+    NSLog(@"123");
   iconArr=@[@[],@[@"findfriend_icon_popolarroots@2x",@"findfriend_icon_guess@2x"],@[@"more_friendscircle_highlighted@2x",@"composer_rating_icon_highlighted@2x",@"noticelist_invite_praise@2x"],@[@"contacts_findfriends_icon@2x",@"contact_miyou_icon@2x"],@[@"findfriend_icon_search@2x",@"more_icon_channelmanage@2x"]];
     
     titleArr=@[@[],@[@"我的好友",@"完善资料"],@[@"我的相册",@"我的收藏",@"赞"],@[@"微博支付",@"个性化"],@[@"我的名片",@"草稿纸"]];
