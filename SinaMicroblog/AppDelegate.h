@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "WeiboSDK.h"
+#import "LandingViewController.h"
+#import "TabBarViewController.h"
+@interface AppDelegate : UIResponder <UIApplicationDelegate,WeiboSDKDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

@@ -17,11 +17,94 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    ///注册 appkey
+    //程序启动时,在代码中向微博终端注册你的 Appkey,如果首次 集成微博SDK,建议打开调试选项以便输出调试信息
+    [WeiboSDK enableDebugMode:YES];//设置微博SDK的调试模式
+    [WeiboSDK registerApp:kAppKey];//向微博客户端程序注册第三方应用
+    
+    NSLog(@"path=%@",NSHomeDirectory());
+    
+    
+    //判断保存token的文件存不存在
+    NSFileManager*fileManager=[NSFileManager defaultManager];
+    NSString*plistPath=[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0] stringByAppendingPathComponent:@"token.plist"];
+    
+    NSLog(@"%@",plistPath);
+    if ([fileManager fileExistsAtPath:plistPath])
+    {
+        //如果存在就得到token
+        NSDictionary*dict=[[NSDictionary alloc]initWithContentsOfFile:plistPath];
+        NSString*token_str=[dict objectForKey:@"token"];
+        NSString*uid_str=[dict objectForKey:@"uid"];
+        NSLog(@"%@,%@",token_str,uid_str);
+        TabBarViewController*tabVC=[[TabBarViewController alloc]init];
+        self.window.rootViewController=tabVC;
+    }else
+    {
+        LandingViewController*root=[[LandingViewController alloc]init];
+        self.window.rootViewController=root;
+    }
+    
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+//重写 AppDelegate 的 handleOpenURL 和 openURL 方法
+//当你授权确定的时候,就会执行openUrl方法
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    //处理微博客户端程序通过URL启动第三方应用时传递的数据
+    return [WeiboSDK handleOpenURL:url delegate:self];
+}
+
+//收到请求
+-(void)didReceiveWeiboRequest:(WBBaseRequest *)request
+{
+    NSLog(@"111%@",request);
+}
+
+//收到响应
+-(void)didReceiveWeiboResponse:(WBBaseResponse *)response
+{
+    NSLog(@"222%@",response);
+    if ([response isKindOfClass:WBAuthorizeResponse.class])
+    {
+        NSString *message = [NSString stringWithFormat:@"响应状态: %d\n响应UserInfo数据: %@\n原请求UserInfo数据: %@",(int)response.statusCode, response.userInfo, response.requestUserInfo];
+        NSLog(@"%@",message);
+        
+        //将收到的token等保存下来
+        if (response.userInfo!=nil) {
+            NSFileManager*filemanager=[NSFileManager defaultManager];
+            NSString*plistPath=[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0] stringByAppendingPathComponent:@"token.plist"];
+            [filemanager createFileAtPath:plistPath contents:nil attributes:nil];
+            NSLog(@"%@",plistPath);
+            NSMutableDictionary *dictplist = [[NSMutableDictionary alloc ] init];
+            //设置属性值
+            
+            
+           [dictplist setObject:[response.userInfo objectForKey:@"access_token"] forKey:@"token"];
+            [dictplist setObject:[response.userInfo objectForKey:@"expires_in"] forKey:@"expires_in"];
+            [dictplist setObject:@"remind_in" forKey:@"remind_in"];
+            [dictplist setObject:[response.userInfo objectForKey:@"uid"] forKey:@"uid"];
+            //写入文件
+            [dictplist writeToFile:plistPath atomically:YES];
+            
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"gotoTabBarVC" object:nil userInfo:nil];
+            [[NSUserDefaults standardUserDefaults]setObject:[response.userInfo objectForKey:@"access_token"] forKey:@"token"];
+            [[NSUserDefaults standardUserDefaults]setObject:[response.userInfo objectForKey:@"uid"] forKey:@"uid"];
+            [[NSUserDefaults standardUserDefaults]synchronize];
+            
+            
+        }
+        
+    }
+}
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

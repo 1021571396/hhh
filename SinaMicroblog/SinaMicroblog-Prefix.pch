@@ -6,6 +6,10 @@
 
 #import <Availability.h>
 
+#define kAppKey @"3608790867"
+#define kRedirectURI @"https://api.weibo.com/oauth2/default.html"
+
+
 #ifndef __IPHONE_3_0
 #warning "This project uses features only available in iOS SDK 3.0 and later."
 #endif
@@ -14,4 +18,10 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import <CoreData/CoreData.h>
+#define  SCREEN_H [UIScreen mainScreen].bounds.size.height
+#define  SCREEN_W [UIScreen mainScreen].bounds.size.width
+#define DEVICE_7_1 [[[UIDevice currentDevice] systemVersion]isEqualToString:@"7.1"]
+#define DEVICE_6_1 [[[UIDevice currentDevice] systemVersion]isEqualToString:@"6.1"]
+#import "JSONKit.h"
+
 #endif
