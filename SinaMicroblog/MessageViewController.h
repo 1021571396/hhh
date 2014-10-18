@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface MessageViewController : UIViewController
+#import "Z_MessageTBCell.h"
+@interface MessageViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end
