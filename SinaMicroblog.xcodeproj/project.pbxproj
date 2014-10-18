@@ -125,6 +125,7 @@
 		3EFE16E919F2324D00E32E13 /* QQmyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE16E819F2324D00E32E13 /* QQmyTableViewCell.m */; };
 		3EFE16EC19F2491400E32E13 /* message_voice_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EFE16EB19F2491400E32E13 /* message_voice_background@2x.png */; };
 		3EFE16EE19F2491C00E32E13 /* message_voice_background_highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EFE16ED19F2491C00E32E13 /* message_voice_background_highlighted@2x.png */; };
+		8222158C19F252B800EB6579 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8222158B19F252B800EB6579 /* AddViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -291,6 +292,8 @@
 		3EFE16E819F2324D00E32E13 /* QQmyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQmyTableViewCell.m; sourceTree = "<group>"; };
 		3EFE16EB19F2491400E32E13 /* message_voice_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message_voice_background@2x.png"; sourceTree = "<group>"; };
 		3EFE16ED19F2491C00E32E13 /* message_voice_background_highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message_voice_background_highlighted@2x.png"; sourceTree = "<group>"; };
+		8222158A19F252B800EB6579 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		8222158B19F252B800EB6579 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -528,6 +531,8 @@
 				2A4462E619F0EDE400F08EF0 /* DiscoverViewController.m */,
 				2A4462F119F0EE0400F08EF0 /* MyselfViewController.h */,
 				2A4462F219F0EE0400F08EF0 /* MyselfViewController.m */,
+				8222158A19F252B800EB6579 /* AddViewController.h */,
+				8222158B19F252B800EB6579 /* AddViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -818,6 +823,7 @@
 				3E5B00EE19F1082D002FB987 /* UIButton+WebCache.m in Sources */,
 				3E5B00E519F1082D002FB987 /* NSData+GIF.m in Sources */,
 				3EFE16DC19F1F77E00E32E13 /* QQMeCell.m in Sources */,
+				8222158C19F252B800EB6579 /* AddViewController.m in Sources */,
 				3E5B011619F127BF002FB987 /* UIImage+Redraw.m in Sources */,
 				3E5B00ED19F1082D002FB987 /* SDWebImagePrefetcher.m in Sources */,
 				3E5B00E919F1082D002FB987 /* SDWebImageDecoder.m in Sources */,

@@ -9,7 +9,7 @@
 #import "DiscoverViewController.h"
 #import "MyselfViewController.h"
 #import "AddView.h"
-
+#import "AddViewController.h"
 @interface TabBarViewController : UITabBarController
 
 @end

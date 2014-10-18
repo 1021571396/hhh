@@ -32,7 +32,16 @@
         [UIView setAnimationDuration:0.5];
         closeButton.transform=CGAffineTransformMakeRotation(M_PI);
         [UIView commitAnimations];
-        
+        //创建UIScrollView
+        UIScrollView*scrollview=[[UIScrollView alloc]initWithFrame:CGRectMake(0, SCREEN_H/2-130, 320, 300)];
+        scrollview.directionalLockEnabled=YES;//单方向滑动
+        scrollview.showsHorizontalScrollIndicator=NO;//隐藏水平滑动滚动条
+        scrollview.showsVerticalScrollIndicator=NO;//隐藏垂直滑动滚动条
+        scrollview.backgroundColor=[UIColor grayColor];
+        scrollview.contentSize=CGSizeMake(640, 300);
+        scrollview.pagingEnabled=YES;
+        scrollview.indicatorStyle=UIScrollViewIndicatorStyleWhite;
+        [self addSubview:scrollview];
         //六个按钮
         NSArray*buttonTitles=[NSArray arrayWithObjects:@"文字",@"相册",@"拍摄",@"签到",@"点评",@"更多", nil];
         NSArray*buttonIamges=[NSArray arrayWithObjects:[UIImage imageNamed:@"tabbar_compose_idea@2x.png"],
@@ -52,13 +61,13 @@
             [btn setImage:[UIImage redrawImage:[buttonIamges objectAtIndex:i] withFrame:CGRectMake(0, 0, 60, 60)] forState:UIControlStateNormal];
             [btn addTarget:self action:@selector(buttonInTabBarAddButtonClickedAction:) forControlEvents:UIControlEventTouchUpInside];
             if (i<3) {
-                btn.frame=CGRectMake(40+90*i, [UIScreen mainScreen].bounds.size.height/2-100, 60, 60);
+                btn.frame=CGRectMake(40+90*i, 0, 60, 60);
             }else
             {
-                btn.frame=CGRectMake(40+90*(i-3), [UIScreen mainScreen].bounds.size.height/2, 60, 60);
+                btn.frame=CGRectMake(40+90*(i-3), 100, 60, 60);
             }
             [btn addSubview:lab];
-            [self addSubview:btn];
+            [scrollview addSubview:btn];
             //按钮动画
             [UIView beginAnimations:nil context:nil];
             [UIView setAnimationDuration:0.5];

@@ -15,7 +15,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         //按钮下标信息
-        NSArray*textarr=[[NSArray alloc]initWithObjects:@"首页",@"消息",@"发现",@"我", nil];
+        NSArray*textarr=[[NSArray alloc]initWithObjects:@"首页",@"消息",@"",@"发现",@"我", nil];
         
         //设置tabbar的模糊背景
         self.frame=CGRectMake(0, [UIScreen mainScreen].bounds.size.height-49+5, 320, 49);

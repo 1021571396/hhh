@@ -115,11 +115,15 @@
 //点击+按钮
 -(void)addClickedAction
 {
-    AddView*addview=[[AddView alloc]init];
-    addview.tag=400;
-    [self.view addSubview:addview];
-    
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(removeaddview:) name:@"removeaddview" object:nil];
+//    AddView*addview=[[AddView alloc]init];
+//    addview.tag=400;
+//    [self.view addSubview:addview];
+
+    AddViewController*add=[[AddViewController alloc]init];
+    add.modalTransitionStyle=UIModalTransitionStyleCoverVertical;
+    [self presentViewController:add animated:YES completion:nil];
+    NSLog(@"123123");
+//    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(removeaddview:) name:@"removeaddview" object:nil];
 }
 //监听到通知关闭+中视图
 -(void)removeaddview:(id*)sender
