@@ -70,6 +70,10 @@
     }
     return self;
 }
+#pragma mark 按钮方法
+-(void)buttonInTabBarAddButtonClickedAction:(id)sender{
+    
+}
 
 #pragma mark 关闭
 -(void)closeAction:(id)sender
