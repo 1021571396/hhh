@@ -31,7 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    NSLog(@"测试");
     
     
     //首页的表视图
