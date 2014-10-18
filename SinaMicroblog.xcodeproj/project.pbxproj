@@ -122,6 +122,7 @@
 		3EFE16DE19F2122700E32E13 /* card_icon_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EFE16DD19F2122700E32E13 /* card_icon_arrow@2x.png */; };
 		3EFE16E019F21FD600E32E13 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFE16DF19F21FD600E32E13 /* MapKit.framework */; };
 		3EFE16E319F2203B00E32E13 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE16E219F2203B00E32E13 /* HomeTableViewCell.m */; };
+		3EFE16E919F2324D00E32E13 /* QQmyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE16E819F2324D00E32E13 /* QQmyTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -284,6 +285,8 @@
 		3EFE16DF19F21FD600E32E13 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3EFE16E119F2203B00E32E13 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
 		3EFE16E219F2203B00E32E13 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		3EFE16E719F2324D00E32E13 /* QQmyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQmyTableViewCell.h; sourceTree = "<group>"; };
+		3EFE16E819F2324D00E32E13 /* QQmyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQmyTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -500,6 +503,8 @@
 				2A4462FB19F0EE1800F08EF0 /* TabBarView.m */,
 				3E5B00F419F11011002FB987 /* QQMyTableView.h */,
 				3E5B00F519F11011002FB987 /* QQMyTableView.m */,
+				3EFE16E719F2324D00E32E13 /* QQmyTableViewCell.h */,
+				3EFE16E819F2324D00E32E13 /* QQmyTableViewCell.m */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -787,6 +792,7 @@
 				2A4462F319F0EE0400F08EF0 /* MyselfViewController.m in Sources */,
 				2A4462E719F0EDE400F08EF0 /* DiscoverViewController.m in Sources */,
 				2A4462AF19F0EBEF00F08EF0 /* main.m in Sources */,
+				3EFE16E919F2324D00E32E13 /* QQmyTableViewCell.m in Sources */,
 				2A4462E119F0EDA100F08EF0 /* UIImage+Redraw.m in Sources */,
 				2A4462E419F0EDB200F08EF0 /* LandingViewController.m in Sources */,
 				2A4462FC19F0EE1800F08EF0 /* TabBarView.m in Sources */,
