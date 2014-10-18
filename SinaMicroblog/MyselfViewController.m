@@ -119,7 +119,7 @@
         
         if (indexPath.row==0) {
             //获取头像
-            [cell.imageView setImageWithURL:[NSURL URLWithString:pictURL]placeholderImage:[UIImage imageNamed:@"card_icon_arrow@2x"]];
+            [cell.imageView setImageWithURL:[NSURL URLWithString:pictURL]placeholderImage:[UIImage redrawImage:[UIImage imageNamed:@"card_icon_arrow@2x"] withFrame:CGRectMake(0, 0, 50, 50)]];
             
             //用户名字
             cell.textLabel.text=name;
