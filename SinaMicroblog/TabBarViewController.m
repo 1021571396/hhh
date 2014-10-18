@@ -79,8 +79,10 @@
     
     DiscoverViewController*discoverVC=[[DiscoverViewController alloc]init];
     UINavigationController*nav_dis=[[UINavigationController alloc]initWithRootViewController:discoverVC];
-    discoverVC.title=@"发现";
+//    discoverVC.title=@"发现";
     discoverVC.tabBarItem.image=[unselectImageArray objectAtIndex:2];
+    UISearchBar*aSearchBar=[[UISearchBar alloc]initWithFrame:CGRectMake(SCREEN_W, 20, SCREEN_W, 44)];
+    
     
     MyselfViewController*myselfVC=[[MyselfViewController alloc]init];
     UINavigationController*nav_myslef=[[UINavigationController alloc]initWithRootViewController:myselfVC];

@@ -38,16 +38,10 @@
 {
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets=NO;
-    
-    iconArr=@[@[],@[@"findfriend_icon_popolarroots@2x",@"findfriend_icon_guess@2x"],@[@"more_friendscircle_highlighted@2x",@"composer_rating_icon_highlighted@2x",@"noticelist_invite_praise@2x"],@[@"contacts_findfriends_icon@2x",@"contact_miyou_icon@2x"],@[@"findfriend_icon_search@2x",@"more_icon_channelmanage@2x"]];
+  iconArr=@[@[],@[@"findfriend_icon_popolarroots@2x",@"findfriend_icon_guess@2x"],@[@"more_friendscircle_highlighted@2x",@"composer_rating_icon_highlighted@2x",@"noticelist_invite_praise@2x"],@[@"contacts_findfriends_icon@2x",@"contact_miyou_icon@2x"],@[@"findfriend_icon_search@2x",@"more_icon_channelmanage@2x"]];
     
     titleArr=@[@[],@[@"我的好友",@"完善资料"],@[@"我的相册",@"我的收藏",@"赞"],@[@"微博支付",@"个性化"],@[@"我的名片",@"草稿纸"]];
-    
-    
-    
-    
-    //
-    
+    //拿到token和uid
     NSString*token=[[NSUserDefaults standardUserDefaults] objectForKey:@"token"];
     NSString*uid=[[NSUserDefaults standardUserDefaults] objectForKey:@"uid"];
     NSLog(@"tokens==%@,uid==%@",token,uid);
@@ -57,8 +51,16 @@
     
     //创建tableView--获取数据后才生成tableview
     [self creatTableView];
+    
+    //设置按钮
+    UIBarButtonItem*right=[[UIBarButtonItem alloc]initWithTitle:@"设置" style:UIBarButtonItemStylePlain target:self action:@selector(rights)];
+    self.navigationItem.rightBarButtonItem=right;
+    
+    
 }
-
+-(void)rights{
+    NSLog(@"right");
+}
 //创建tableView
 -(void)creatTableView{
     
@@ -105,17 +107,21 @@
     }
     cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
     
-    if (indexPath.section==0) {
-        pictURL=[dictJson objectForKey:@"profile_image_url"];
+    
+    
+    pictURL=[dictJson objectForKey:@"profile_image_url"];
         name=[dictJson objectForKey:@"screen_name"];
         NSString*weibos=[NSString stringWithFormat:@"%@",[dictJson objectForKey:@"statuses_count"]];
         NSString*attentions=[NSString stringWithFormat:@"%@",[dictJson objectForKey:@"friends_count"]];
         NSString*friends=[NSString stringWithFormat:@"%@",[dictJson objectForKey:@"followers_count"]];
         NSLog(@"weibos==%@,attentions=%@,friends=%@",weibos,attentions,friends);
-        NSNumber*collects=[dictJson objectForKey:@"favourites_count"];
+        NSString*collects=[NSString stringWithFormat:@"%@",[dictJson objectForKey:@"favourites_count"]];
         NSString*myDescription=[dictJson objectForKey:@"description"];
         NSLog(@"pictUrl=%@",pictURL);
         NSLog(@"name=%@",name);
+    
+    if (indexPath.section==0) {
+       
         
         if (indexPath.row==0) {
             //获取头像
@@ -142,32 +148,6 @@
             cells.label3.text=friends;
             return cells;
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            //            for (int i=0; i<3; i++) {
-            //                UIButton*btn=[[UIButton alloc]initWithFrame:CGRectMake(i*SCREEN_W/3, 5, SCREEN_W/3, 40)];
-            //                UILabel*label=[[UILabel alloc]initWithFrame:CGRectMake(i*SCREEN_W/3, 0, SCREEN_W/3, 20)];
-            //                label.textAlignment=NSTextAlignmentCenter;
-            //                label.text=[NSString stringWithFormat:@"%@",[countArr objectAtIndex:i]];
-            //                //label.backgroundColor=[UIColor redColor];
-            //                //设置字体颜色
-            //                NSAttributedString*attribute=[[NSAttributedString alloc]initWithString:[NSString stringWithFormat:@"%@",[butTitle objectAtIndex:i]] attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:12],NSForegroundColorAttributeName:[UIColor grayColor]}];
-            //                [btn setAttributedTitle:attribute forState:UIControlStateNormal];
-            //                [cell.contentView addSubview:btn];
-            //                [btn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-            //                [cell.contentView addSubview:label];
-            //
-            //                cell.accessoryType=UITableViewCellAccessoryNone;
-            //            }
-            
-            
         }
         
         
@@ -177,6 +157,28 @@
     if (indexPath.section>0) {
         cell.imageView.image=[UIImage imageNamed:[[iconArr objectAtIndex:indexPath.section]objectAtIndex:indexPath.row]];
         cell.textLabel.text=[[titleArr objectAtIndex:indexPath.section]objectAtIndex:indexPath.row];
+        if (indexPath.section==2) {
+            if (indexPath.row==1) {
+                NSLog(@"collect=%@",collects);
+//                NSAttributedString*attrStr=[[NSAttributedString alloc]initWithString:[NSString stringWithFormat:@"%@(%@)",[[titleArr objectAtIndex:indexPath.section]objectAtIndex:indexPath.row],collects] attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:10],NSForegroundColorAttributeName: [UIColor redColor]}];
+//                [attrStr attribute:[[titleArr objectAtIndex:indexPath.section]objectAtIndex:indexPath.row] atIndex:2 effectiveRange:&NSMakeRange(0, 1)];
+////               cell.textLabel.text=[NSString stringWithFormat:@"%@%@",[[titleArr objectAtIndex:indexPath.section]objectAtIndex:indexPath.row],attrStr];
+//                [attrStr attributedSubstringFromRange:NSMakeRange(1, 3)];
+                NSString*str=[NSString stringWithFormat:@"%@ (%@)",[[titleArr objectAtIndex:indexPath.section]objectAtIndex:indexPath.row],collects];
+                cell.textLabel.text=str;
+//                UILabel*label=[[UILabel alloc]initWithFrame:CGRectMake(150, 5, 50, 20)];
+//                label.attributedText=attrStr;
+//                [cell.contentView addSubview:label];
+                
+                
+                
+                
+                
+                
+                
+                
+            }
+        }
     }
     
     return cell;
