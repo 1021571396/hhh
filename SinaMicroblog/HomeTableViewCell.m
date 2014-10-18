@@ -15,7 +15,6 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self)
     {
-        NSLog(@"2222");
         
         //用户头像
         userImageView=[[UIImageView alloc]initWithFrame:CGRectMake(5, 10, 35, 35)];

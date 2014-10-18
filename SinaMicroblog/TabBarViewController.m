@@ -100,8 +100,8 @@
 #pragma mark - 点击UITabBarItem的变换颜色
 -(void)selectTabBarItem:(UIButton*)button
 {
-    NSLog(@"%d",self.selectedIndex);
-    int tempIndex=self.selectedIndex;
+    NSLog(@"%lu",(unsigned long)self.selectedIndex);
+    unsigned long int tempIndex=self.selectedIndex;
     UIButton*btn=[tabBarView.buttonArray_tabbar objectAtIndex:tempIndex];
     UIImage*image1=[unselectImageArray objectAtIndex:tempIndex];
     [btn setImage:image1 forState:UIControlStateNormal];
