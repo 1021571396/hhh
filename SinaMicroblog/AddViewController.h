@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "UIImage+Redraw.h"
-@interface AddViewController : UIViewController
-
+@interface AddViewController : UIViewController<UIScrollViewDelegate>
+{
+    UIScrollView*scrollview;
+    UIButton*closeButton,*backBtn,*closeBtn;
+    
+}
 @end

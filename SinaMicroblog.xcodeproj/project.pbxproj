@@ -108,7 +108,6 @@
 		3E5B010519F11F96002FB987 /* findfriend_icon_guess@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E5B00FB19F11F96002FB987 /* findfriend_icon_guess@2x.png */; };
 		3E5B010619F11F96002FB987 /* findfriend_icon_popolarroots@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E5B00FC19F11F96002FB987 /* findfriend_icon_popolarroots@2x.png */; };
 		3E5B010719F11F96002FB987 /* message_choosegroup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E5B00FD19F11F96002FB987 /* message_choosegroup@2x.png */; };
-		3E5B010819F11F96002FB987 /* messagescenter_good@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E5B00FE19F11F96002FB987 /* messagescenter_good@2x.png */; };
 		3E5B010919F11F96002FB987 /* more_friendscircle_highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E5B00FF19F11F96002FB987 /* more_friendscircle_highlighted@2x.png */; };
 		3E5B010A19F11F96002FB987 /* more_icon_channelmanage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E5B010019F11F96002FB987 /* more_icon_channelmanage@2x.png */; };
 		3E5B010B19F11F96002FB987 /* noticelist_invite_hi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E5B010119F11F96002FB987 /* noticelist_invite_hi@2x.png */; };
@@ -124,6 +123,7 @@
 		3EFE16E919F2324D00E32E13 /* QQmyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE16E819F2324D00E32E13 /* QQmyTableViewCell.m */; };
 		3EFE16EC19F2491400E32E13 /* message_voice_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EFE16EB19F2491400E32E13 /* message_voice_background@2x.png */; };
 		3EFE16EE19F2491C00E32E13 /* message_voice_background_highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EFE16ED19F2491C00E32E13 /* message_voice_background_highlighted@2x.png */; };
+		8217FE8519F3679800254BC7 /* messagescenter_good@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8217FE8419F3679800254BC7 /* messagescenter_good@2x.png */; };
 		8222158C19F252B800EB6579 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8222158B19F252B800EB6579 /* AddViewController.m */; };
 		82B7B86219F263E300461DB0 /* Z_MessageTBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B7B86119F263E300461DB0 /* Z_MessageTBCell.m */; };
 		82B7B86819F2658E00461DB0 /* common_icon_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B7B86319F2658E00461DB0 /* common_icon_arrow@2x.png */; };
@@ -275,7 +275,6 @@
 		3E5B00FB19F11F96002FB987 /* findfriend_icon_guess@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "findfriend_icon_guess@2x.png"; sourceTree = "<group>"; };
 		3E5B00FC19F11F96002FB987 /* findfriend_icon_popolarroots@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "findfriend_icon_popolarroots@2x.png"; sourceTree = "<group>"; };
 		3E5B00FD19F11F96002FB987 /* message_choosegroup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message_choosegroup@2x.png"; sourceTree = "<group>"; };
-		3E5B00FE19F11F96002FB987 /* messagescenter_good@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messagescenter_good@2x.png"; sourceTree = "<group>"; };
 		3E5B00FF19F11F96002FB987 /* more_friendscircle_highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more_friendscircle_highlighted@2x.png"; sourceTree = "<group>"; };
 		3E5B010019F11F96002FB987 /* more_icon_channelmanage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more_icon_channelmanage@2x.png"; sourceTree = "<group>"; };
 		3E5B010119F11F96002FB987 /* noticelist_invite_hi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noticelist_invite_hi@2x.png"; sourceTree = "<group>"; };
@@ -295,6 +294,7 @@
 		3EFE16E819F2324D00E32E13 /* QQmyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQmyTableViewCell.m; sourceTree = "<group>"; };
 		3EFE16EB19F2491400E32E13 /* message_voice_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message_voice_background@2x.png"; sourceTree = "<group>"; };
 		3EFE16ED19F2491C00E32E13 /* message_voice_background_highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message_voice_background_highlighted@2x.png"; sourceTree = "<group>"; };
+		8217FE8419F3679800254BC7 /* messagescenter_good@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messagescenter_good@2x.png"; sourceTree = "<group>"; };
 		8222158A19F252B800EB6579 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
 		8222158B19F252B800EB6579 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
 		82B7B86019F263E300461DB0 /* Z_MessageTBCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z_MessageTBCell.h; sourceTree = "<group>"; };
@@ -616,8 +616,8 @@
 				3E5B00FA19F11F96002FB987 /* contacts_findfriends_icon@2x.png */,
 				3E5B00FB19F11F96002FB987 /* findfriend_icon_guess@2x.png */,
 				3E5B00FC19F11F96002FB987 /* findfriend_icon_popolarroots@2x.png */,
+				8217FE8419F3679800254BC7 /* messagescenter_good@2x.png */,
 				3E5B00FD19F11F96002FB987 /* message_choosegroup@2x.png */,
-				3E5B00FE19F11F96002FB987 /* messagescenter_good@2x.png */,
 				3E5B00FF19F11F96002FB987 /* more_friendscircle_highlighted@2x.png */,
 				3E5B010019F11F96002FB987 /* more_icon_channelmanage@2x.png */,
 				3E5B010119F11F96002FB987 /* noticelist_invite_hi@2x.png */,
@@ -772,7 +772,6 @@
 				2A44636219F0EEB700F08EF0 /* tabbar_more_highlighted@2x.png in Resources */,
 				2A44636A19F0EEB700F08EF0 /* tabbar_slider@2x.png in Resources */,
 				2A44635819F0EEB700F08EF0 /* tabbar_discover@2x.png in Resources */,
-				3E5B010819F11F96002FB987 /* messagescenter_good@2x.png in Resources */,
 				2A44635119F0EEB700F08EF0 /* tabbar_compose_review@2x.png in Resources */,
 				2A44634E19F0EEB700F08EF0 /* tabbar_compose_music@2x.png in Resources */,
 				2A44634619F0EEB700F08EF0 /* tabbar_compose_icon_add_highlighted@2x.png in Resources */,
@@ -791,6 +790,7 @@
 				2A4462DA19F0EC4C00F08EF0 /* WeiboSDK.bundle in Resources */,
 				2A44636119F0EEB700F08EF0 /* tabbar_more@2x.png in Resources */,
 				2A44636519F0EEB700F08EF0 /* tabbar_music_highlighted@2x.png in Resources */,
+				8217FE8519F3679800254BC7 /* messagescenter_good@2x.png in Resources */,
 				2A44635D19F0EEB700F08EF0 /* tabbar_home_selected@2x.png in Resources */,
 				2A44634C19F0EEB700F08EF0 /* tabbar_compose_more@2x.png in Resources */,
 				2A44633E19F0EEB700F08EF0 /* tabbar_compose_book@2x.png in Resources */,
@@ -975,6 +975,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zhenghong Li (V48769EWT5)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -987,6 +988,7 @@
 					"$(PROJECT_DIR)/SinaMicroblog/libWeiboSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eaf455b1-b0d6-4191-baa0-126a25c4e818";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -996,6 +998,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zhenghong Li (V48769EWT5)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -1008,6 +1011,7 @@
 					"$(PROJECT_DIR)/SinaMicroblog/libWeiboSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eaf455b1-b0d6-4191-baa0-126a25c4e818";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

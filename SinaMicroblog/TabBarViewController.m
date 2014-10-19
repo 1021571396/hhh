@@ -81,7 +81,7 @@
     UINavigationController*nav_dis=[[UINavigationController alloc]initWithRootViewController:discoverVC];
 //    discoverVC.title=@"发现";
     discoverVC.tabBarItem.image=[unselectImageArray objectAtIndex:2];
-    UISearchBar*aSearchBar=[[UISearchBar alloc]initWithFrame:CGRectMake(SCREEN_W, 20, SCREEN_W, 44)];
+//    UISearchBar*aSearchBar=[[UISearchBar alloc]initWithFrame:CGRectMake(SCREEN_W, 20, SCREEN_W, 44)];
     
     
     MyselfViewController*myselfVC=[[MyselfViewController alloc]init];
@@ -115,14 +115,11 @@
 //点击+按钮
 -(void)addClickedAction
 {
-//    AddView*addview=[[AddView alloc]init];
-//    addview.tag=400;
-//    [self.view addSubview:addview];
 
     AddViewController*add=[[AddViewController alloc]init];
     add.modalTransitionStyle=UIModalTransitionStyleCoverVertical;
-    [self presentViewController:add animated:YES completion:nil];
-    NSLog(@"123123");
+    [self presentViewController:add animated:NO completion:nil];
+    
 //    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(removeaddview:) name:@"removeaddview" object:nil];
 }
 //监听到通知关闭+中视图

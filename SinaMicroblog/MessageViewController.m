@@ -7,7 +7,7 @@
 //
 
 #import "MessageViewController.h"
-#import "QQMeCell.h"
+
 
 @interface MessageViewController ()
 

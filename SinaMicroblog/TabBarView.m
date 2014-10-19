@@ -19,7 +19,7 @@
         
         //设置tabbar的模糊背景
         self.frame=CGRectMake(0, [UIScreen mainScreen].bounds.size.height-49+5, 320, 49);
-        self.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.98];
+        self.backgroundColor = [UIColor colorWithRed:244/255.0 green:244/255.0 blue:244/255.0 alpha:0.98];
         //按钮
         buttonArray_tabbar=[[NSMutableArray alloc]init];
         double width=320/5;

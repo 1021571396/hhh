@@ -32,7 +32,7 @@
 {
     [super viewDidLoad];
     NSLog(@"测试");
-    
+//    
     
     //首页的表视图
     tableView_home=[[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStyleGrouped];
@@ -59,7 +59,7 @@
 - (void)request:(WBHttpRequest *)request didFinishLoadingWithResult:(NSString *)result
 {
     dict_request_result=[result objectFromJSONString];
-    NSLog(@"%@",dict_request_result);
+//    NSLog(@"%@",dict_request_result);
     arr_friendContents=[[NSMutableArray alloc]init];
     arr_friendNames=[[NSMutableArray alloc]init];
     //请求图片

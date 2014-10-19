@@ -15,7 +15,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.frame=CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
-        self.backgroundColor = [UIColor colorWithRed:250.0/255 green:250.0/255 blue:250.0/255 alpha:0.99];
+        self.backgroundColor = [UIColor colorWithRed:244/255.0 green:244/255.0 blue:244/255.0 alpha:0.98];
         UIView *subView = [[UIView alloc]initWithFrame:CGRectMake(0, UnderY, 320, 49)];
         subView.backgroundColor = [UIColor whiteColor];
         [self addSubview:subView];
@@ -96,7 +96,7 @@
         btn.transform=CGAffineTransformMakeTranslation(0, 500);
         [UIView commitAnimations];
     }
-    [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(removeAddViewAction:) userInfo:nil repeats:NO];
+//    [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(removeAddViewAction:) userInfo:nil repeats:NO];
     
 }
 

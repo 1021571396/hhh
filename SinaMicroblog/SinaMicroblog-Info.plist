@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>Manito.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.HonQooTech.Creatation</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -26,7 +26,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.weibo</string>
+			<string>com.HonQooTech.Creatation</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>wb3608790867</string>
