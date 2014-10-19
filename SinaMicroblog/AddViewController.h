@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UIImage+Redraw.h"
+#import "SendWeiBoViewController.h"
 @interface AddViewController : UIViewController<UIScrollViewDelegate>
 {
     UIScrollView*scrollview;

@@ -25,7 +25,7 @@
     buttomView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:buttomView];
     //创建UIScrollView
-    scrollview=[[UIScrollView alloc]initWithFrame:CGRectMake(0, SCREEN_H/2-80, 320, 300)];
+    scrollview=[[UIScrollView alloc]initWithFrame:CGRectMake(0, SCREEN_H/2-80, 320, 360)];
     scrollview.directionalLockEnabled=YES;//单方向滑动
     scrollview.showsHorizontalScrollIndicator=NO;//隐藏水平滑动滚动条
     scrollview.showsVerticalScrollIndicator=NO;//隐藏垂直滑动滚动条
@@ -166,7 +166,11 @@
     UIButton*btn=(UIButton*)sender;
     switch (btn.tag) {
         case 2001:
-            
+        {
+            SendWeiBoViewController*sVC=[[SendWeiBoViewController alloc]init];
+            self.modalTransitionStyle=UIModalTransitionStyleCoverVertical;
+            [self presentViewController:sVC animated:YES completion:nil];
+        }
             break;
         case 2002:
             NSLog(@"1");

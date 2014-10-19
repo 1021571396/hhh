@@ -124,6 +124,7 @@
 		3EFE16EC19F2491400E32E13 /* message_voice_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EFE16EB19F2491400E32E13 /* message_voice_background@2x.png */; };
 		3EFE16EE19F2491C00E32E13 /* message_voice_background_highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EFE16ED19F2491C00E32E13 /* message_voice_background_highlighted@2x.png */; };
 		8217FE8519F3679800254BC7 /* messagescenter_good@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8217FE8419F3679800254BC7 /* messagescenter_good@2x.png */; };
+		8217FE8819F3B03800254BC7 /* SendWeiBoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8217FE8719F3B03800254BC7 /* SendWeiBoViewController.m */; };
 		8222158C19F252B800EB6579 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8222158B19F252B800EB6579 /* AddViewController.m */; };
 		82B7B86219F263E300461DB0 /* Z_MessageTBCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B7B86119F263E300461DB0 /* Z_MessageTBCell.m */; };
 		82B7B86819F2658E00461DB0 /* common_icon_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B7B86319F2658E00461DB0 /* common_icon_arrow@2x.png */; };
@@ -295,6 +296,8 @@
 		3EFE16EB19F2491400E32E13 /* message_voice_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message_voice_background@2x.png"; sourceTree = "<group>"; };
 		3EFE16ED19F2491C00E32E13 /* message_voice_background_highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message_voice_background_highlighted@2x.png"; sourceTree = "<group>"; };
 		8217FE8419F3679800254BC7 /* messagescenter_good@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messagescenter_good@2x.png"; sourceTree = "<group>"; };
+		8217FE8619F3B03800254BC7 /* SendWeiBoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SendWeiBoViewController.h; path = ../SendWeiBoViewController.h; sourceTree = "<group>"; };
+		8217FE8719F3B03800254BC7 /* SendWeiBoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SendWeiBoViewController.m; path = ../SendWeiBoViewController.m; sourceTree = "<group>"; };
 		8222158A19F252B800EB6579 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
 		8222158B19F252B800EB6579 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
 		82B7B86019F263E300461DB0 /* Z_MessageTBCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Z_MessageTBCell.h; sourceTree = "<group>"; };
@@ -548,6 +551,8 @@
 				2A4462F219F0EE0400F08EF0 /* MyselfViewController.m */,
 				8222158A19F252B800EB6579 /* AddViewController.h */,
 				8222158B19F252B800EB6579 /* AddViewController.m */,
+				8217FE8619F3B03800254BC7 /* SendWeiBoViewController.h */,
+				8217FE8719F3B03800254BC7 /* SendWeiBoViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -825,6 +830,7 @@
 			files = (
 				3E5B00F019F1082D002FB987 /* UIImage+MultiFormat.m in Sources */,
 				2A4462ED19F0EDF800F08EF0 /* LandingView.m in Sources */,
+				8217FE8819F3B03800254BC7 /* SendWeiBoViewController.m in Sources */,
 				3E5B00EC19F1082D002FB987 /* SDWebImageManager.m in Sources */,
 				82B7B86219F263E300461DB0 /* Z_MessageTBCell.m in Sources */,
 				2A4462B319F0EBEF00F08EF0 /* AppDelegate.m in Sources */,
